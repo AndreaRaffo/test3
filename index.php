@@ -4,6 +4,20 @@ session_start();
 if(isset($_SESSION['name'])){
 	header("Location: private.php");
 }
+if(isset($_COOKIE["mycookie"])){
+	$file = fopen('data.txt', 'r');
+	while(!feof($file)){
+		$line = fgets($file);
+		list($user, $pass) = explode(';', $line);
+		$psw = trim($pass);
+		$usr = trim($user);
+		$password_hash = password_hash($psw,PASSWORD_DEFAULT);
+		if($password_hash == $_COOKIE["mycookie"]){
+			$_SESSION['name'] = $usr;
+			header("Location: private.php");
+		}
+	}
+}
 ?>
 
 <!doctype html>
