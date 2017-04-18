@@ -1,7 +1,7 @@
 
 <?php
 session_start();
-echo 'name';
+echo 'ciao';
 if(isset($_SESSION['name'])){
 	header("Location: private.php");
 }
