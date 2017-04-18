@@ -41,10 +41,6 @@ if(!isset($_SESSION['name'])){
 	<div id="mainArea">
 		<div class="container page">
 			<?php echo "Benvenuto ". $_SESSION['name'];
-				    $file = fopen('cookies.txt', 'r');
-					while(!feof($file)){
-					$line = fgets($file);
-					echo "$line<br>";}
 			?>
 
 		</div>
