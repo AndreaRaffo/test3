@@ -40,8 +40,7 @@ if(!isset($_SESSION['name'])){
 
 	<div id="mainArea">
 		<div class="container page">
-			<?php echo "Benvenuto ". $_SESSION['name'];
-			 echo $_COOKIE[];?>
+			<?php echo "Benvenuto ". $_SESSION['name'];?>
 
 		</div>
 	</div>
