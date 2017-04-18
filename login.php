@@ -16,7 +16,7 @@ if(isset($_POST["name"]) && isset($_POST["password"])){
     if($good){
 		if($_POST['autologin'] == 1){
 		$hashed_password = password_hash(trim($pass), PASSWORD_DEFAULT);
-		setcookie(trim($user),$hashed_password, time() + (3600 * 24 * 30),"Cookies"); //30 days
+		setcookie(trim($user),$hashed_password, time() + (3600 * 24 * 30)); //30 days
 		}
 		$_SESSION['name'] = $_POST["name"];
 		header("Location: private.php");
