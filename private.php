@@ -38,7 +38,7 @@ if(!isset($_SESSION['name'])){
 
 	<div id="mainArea">
 		<div class="container page">
-			<h3>Sito in costruzione</h3>
+			<?php echo "Benvenuto ". $_SESSION['name'];?>
 
 			
 		</div>
