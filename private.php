@@ -38,7 +38,7 @@ if(!isset($_SESSION['name'])){
 
 	<div id="mainArea">
 		<div class="container page">
-			<?php echo "Benvenuto ". $_SESSION['name'];?>
+			<?php echo "<p id=msg> Benvenuto ". $_SESSION['name'] ."</p>";?>
 
 			
 		</div>

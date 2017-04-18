@@ -98,7 +98,9 @@ img.registrati{
 	width: 50px;
 }
 
-
+#msg{
+	font-size: bold;
+}
 
 .loginBtn{
 	font-size: 18px;
