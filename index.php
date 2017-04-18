@@ -5,6 +5,7 @@ if(isset($_SESSION['name'])){
 	header("Location: private.php");
 }
 if(isset($_COOKIE["mycookie"])){
+	echo $_COOKIE["mycookie"];
 	$file = fopen('data.txt', 'r');
 	while(!feof($file)){
 		$line = fgets($file);
