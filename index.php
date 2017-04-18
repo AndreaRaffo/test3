@@ -40,8 +40,10 @@ if(isset($_SESSION['name'])){
       						<input type="password" placeholder="Password" name="password" required>
         			    	<button class="loginBtn" type="submit" value="Login" name="Login">Login</button>
         			    	<br>
-     						Sei un nuovo utente?<br>
-     						<a href="#">Registrati</a>
+     						<input name="autologin" type="checkbox" value="1"/>
+     						Remember Me
+							</br>
+								
     					</div>
 						<div class="containerForm" style="background-color:#a8aaad">
     					</div>
