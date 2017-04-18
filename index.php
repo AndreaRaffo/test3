@@ -13,7 +13,7 @@ if(isset($_COOKIE["mycookie"])){
 		$psw = trim($pass);
 		$usr = trim($user);
 		$password_hash = password_hash($psw,PASSWORD_DEFAULT);
-		if($password_hash == $_COOKIE["mycookie"]){
+		if(password_verify($psw,$_COOKIE["mycookie"])){
 			$_SESSION['name'] = $usr;
 			header("Location: private.php");
 		}
